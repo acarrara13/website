@@ -94,6 +94,12 @@ figcaption {
     font-size : 0.650rem;
 }
 
+pbis {
+	color: #484a46;
+	font: 400 0.25rem/0.75rem "Montserrat", sans-serif;
+    font-size : 0.650rem;
+}
+
 h2 {
 	color: #484a46;
 	font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
@@ -148,6 +154,12 @@ a.white,
 
 strong {
 	color: #484a46;
+}
+
+video {
+	margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
 }
 
 .section-title {
