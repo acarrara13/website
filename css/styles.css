@@ -159,7 +159,7 @@ strong {
 video {
 	margin-left: auto;
     margin-right: auto;
-    display: inline-block;
+    display: block;
 }
 
 .section-title {
@@ -861,6 +861,10 @@ input[type='checkbox'] {
 .basic-1 p {
     text-align: justify;
     text-justify: inter-word;
+}
+
+.basic-1 pbis {
+    margin-bottom: 0.5rem;
 }
 
 .basic-1 figcaption {
