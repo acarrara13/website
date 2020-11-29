@@ -871,6 +871,12 @@ input[type='checkbox'] {
     text-align: right;
 }
 
+.basic-1 li {
+	text-align: justified;
+	text-justify: inner-word;
+}
+
+
 /* Hover Animation */
 .basic-1 .image-container {
 	overflow: hidden;
@@ -878,7 +884,7 @@ input[type='checkbox'] {
 }
 
 .basic-1 .image-container img {
-	margin: 0;
+	margin-top: 0rem;
 	border-radius: 0.25rem;
 	transition: all 0.3s;
 }
@@ -888,6 +894,66 @@ input[type='checkbox'] {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 } 
+
+
+.basic-1b {
+	padding-top: 6.5rem;
+	padding-bottom: 3rem;
+}
+
+.basic-1b row {
+	margin-bottom: 2.5rem;
+}
+
+.basic-1b .text-container {
+	margin-bottom: 3rem;
+}
+
+.basic-1b .section-title {
+	margin-bottom: 1.25rem;
+}
+
+.basic-1b h2 {
+	margin-bottom: 0.5rem;
+}
+
+.basic-1b p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.basic-1b pbis {
+    margin-bottom: 0.5rem;
+}
+
+.basic-1b figcaption {
+    text-align: justified;
+	text-justify: inter-word;
+}
+
+.basic-1b li {
+	text-align: justified;
+	text-justify: inner-word;
+}
+
+
+/* Hover Animation */
+.basic-1b .image-container {
+	overflow: hidden;
+	border-radius: 0.25rem;
+}
+
+.basic-1b .image-container img {
+	border-radius: 0.25rem;
+	transition: all 0.3s;
+}
+
+.basic-1b .image-container:hover img {
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	transform: scale(1);
+} 
+
 /* end of hover animation */
 
 /************************/
@@ -1829,6 +1895,14 @@ a:hover.back-to-top {
 	}
 	/* end of intro */
 
+	.basic-1b {
+		padding-top: 6.875rem;
+	}
+
+	.basic-1b .text-container {
+		margin-bottom: 0;
+	}
+	/* end of intro */
 
 	/* Description */
 	.cards-1 .card {
