@@ -61,7 +61,7 @@
                 <div class="col-lg-6">
                     <div class="text-container">
 						<h1>Introduction</h1>
-                        <p>Magmatic reservoirs located in the upper crust have been shown to result from the repeated intrusions of new magmas, and spend much of the time as a crystal-rich mush (Fig. 1). A mush is a magma that has cooled and crystallized where crystals are touching together to form a rigid skeleton inhibiting its ability to easily flow. The geometry of the intruded batch of new magmas and its interaction with the surrounding mush may greatly affect the thermal and compositional evolution of the reservoir. Despite advances in our understanding of the physical processes that may occur in a magmatic reservoir, the resulting architecture and dynamics of the composite system remains poorly constrained.</p>
+                        <p>Magmatic reservoirs located in the upper crust have been shown to result from the repeated intrusions of new magmas, and spend much of the time as a crystal-rich mush (Fig. 1). A mush is a magma which has cooled and crystallized and where crystals are touching together to form a rigid skeleton inhibiting its ability to flow easily. The geometry of the intruded batch of new magmas and its interaction with the surrounding mush may greatly affect the thermal and compositional evolution of the reservoir. Despite advances in our understanding of the physical processes that may occur in a magmatic reservoir, the resulting architecture and dynamics of the composite system remains poorly constrained.</p>
 						<p>Main goals are:</p>
 						<ul style="list-style-type:square">
 							<li>Determine the geometry of magma intrusions in mush and what are the controlling physical parameters</li>
@@ -74,7 +74,7 @@
                     <div class="image-container">
                         <!--img class="img-fluid" src="images/header.jpg" alt="alternative"-->
                         <img style="margin-top: 1.5rem" class="img-fluid" src="images/magma_reservoir_scheme.png" alt="alternative">
-                        <p class="p-small"><b>Figure 1:</b> Schematic transcrustal outcrop of a magmatic reservoir. The blue color indicates the presence of crystal poor and eruptible magmas. the cyan color corresponds to the uneruptible magmatic mush. The yellow is for the partially molten rocks (when the melt is only present in small and isolated pockets). The red color indicates the presence of solid rock. The green dashed curve delimits the magmatic system</p>
+                        <p class="p-small"><b>Figure 1:</b>Schematic outcrop of a magmatic reservoir (redraw from Cashman et al., 2017). The blue color indicates the presence of crystal poor and eruptible magmas. the cyan color corresponds to the uneruptible magmatic mush. The yellow is for the partially molten rocks (when the melt is only present in small and isolated pockets). The red color indicates the presence of solid rock. The green dashed curve delimits the magmatic system </p>
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -89,9 +89,9 @@
 				<div class="col-lg-6">
                     <div class="text-container">
 						<h1>Method</h1>
-                        <p>We perform numerical simulations using a Discrete Element Model coupled with a Computational Fluid Dynamic solver (CFD-DEM) to explore the dynamics existing in the magmatic reservoir during and after the emplacement of crystal free magmas within the crystal rich mush. Our model is based on the open source code MFIX (Multiphase Flow with Interphases eXchanges) developed at the NETL (National Energy Technology Laboratory).</p>
-						<p>The discrete element method considers explicitly the crystals a discrete entities (currently spheres or disks; Fig. 2) that can interact together through frictional contacts or other physical processes (i.e. heat transfer). Basically, for each particle and at each time step, the model computes all the forces acting on the particle and its acceleration with the Newton’s second law. Then the position and velocity of the particle is updated. </p>
-						<p>The motion of the fluid is computed on a regular grid (Fig. 2) with the iterative solver SIMPLE, which uses a finite volume method. The two phases exchange momentum (drag and pressure forces) and heat such that the dynamics of one phase affect tho one of the other phase (Fig. 2).  Detail on the model and equations can be found in the chapter 2 of this document.</p>
+                        <p>We perform numerical simulations using a Discrete Element Model coupled with a Computational Fluid Dynamic solver (CFD-DEM) to explore the dynamics existing in the magmatic reservoir during and after the emplacement of crystal free magmas within the crystal rich mush. The model is based on the open source code <a href="https://mfix.netl.doe.gov">MFIX</a> (Multiphase Flow with Interphases eXchanges) developed at the NETL (National Energy Technology Laboratory).</p>
+						<p>The discrete element method considers explicitly the crystals a discrete entities (here spheres or disks; Fig. 2), which can interact togethers through frictional contacts or other physical processes (i.e. heat transfer). Basically, for each particle and time step, the model computes the acceleration of the particle from the sum of the forces applied to it using the Newton’s second law before updating its velocity and position.</p>
+						<p>The motion of the fluid is computed on a regular grid (Fig. 2) using the iterative solver SIMPLE (Patankar, 1980), which uses a finite volume method. The two phases exchange momentum (drag and pressure forces) and heat such that the dynamics of one phase affect tho one of the other phase (Fig. 2).</p>
 					</div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -99,15 +99,15 @@
                 <div class="col-lg-6">
                     <div class="text-container">
 						<h1>Results</h1>
-                        <p>We explored the geometry and emplacement dynamics of new magma within magmatic mush. Here, CFD-DEM simulations consist in the injection of a crystal free magma inside a crystal rich layer (Fig. ?). We perfomred a series of experiments by varying the physical properties of injected melt (density and viscosity) and the injection velocity.</p>
-						<p>Simulations were sorted in three regimes: Mixing bowl regime (Anim. 1); Lateral spreading (Anim. 2); Rising regime (Anim. 3). Analysis of the simulation observed regimes showed that the dynamics of the emplacement of new magma in the resrrvoirs was first order controled by the density contrast existing between the howt and intruded melt phases.</p>
-					</div> <!-- end of text-container -->
+                        <p>We explored the geometry and emplacement dynamics of a new magma within a magmatic mush. Simulations consist in the injection of a crystal free magma inside a crystal rich layer (Fig. 3). We performed several runs by varying the physical properties of injected melt (density and dynamic viscosity) and the injection velocity.</p>
+						<p>Simulations were sorted in three regimes: mixing bowl (Anim. 1), lateral spreading (Anim. 2), and rising (Anim. 3) regimes. The distribution of the different regimes against dimensionless numbers (Atwood number and dimensionless viscosity contrast) showed that the dynamics of the emplacement of new magma in the reservoirs was first order controlled by the density contrast existing between the melt phases of the host and intruded materials.</p>
+						</div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="image-container">
                         <!--img class="img-fluid" src="images/header.jpg" alt="alternative"-->
                         <img class="img-fluid" src="images/exp_setup.png" alt="alternative">
-                        <figcaption>Columbia river estuary, Astoria, OR. Credit: My wife</figcaption>
+                        <p class="p-small"><b>Figure 3:</b> Simulations initial conditions. The blue and green background colors correspond to the host and intruded melt phases, respectively.</p>
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -117,13 +117,15 @@
                     <div class="image-container">
                         <!--img class="img-fluid" src="images/header.jpg" alt="alternative"-->
                         <img class="img-fluid" src="images/regime_diagram.png" alt="alternative">
-                        <figcaption>Columbia river estuary, Astoria, OR. Credit: My wife</figcaption>
+                        <p class="p-small"><b>Figure 4:</b> Distribution of the runs as a function of the Atwood number and the dimensionless viscosity contrast. On the abscissa, the black and red coordinates indicate the Atwood numbers computed with the melt phase densities and with the bulk densities, respectively. Each square corresponds to a run and its color depends on the observed regime (blue: rising; black: fluidization; red: lateral spreading). All runs displayed on this figure were performed with the same dimensionless injection velocity.</p>
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="text-container">
-						<p>Results are in contrast with the hypothesis previously used in volcanology that the bulk density (weighted average density taking into account the liquid, solid and gas phases and their respective concentrations) contrasts control the motion of mass in the magmatic reservoir. The viscosity contrast between the two melt phases and injection velocity were found to have a lesser importance on the emplacement of new magma in the reservoir</p>
-						<p>Related publication: Carrara, A., Burgisser, A., Bergantz, G.W., 2020. The architecture of intrusions in magmatic mush, Earth and Planetary Science Letters, 549, 116539. <a href="https://doi.org/10.1016/j.epsl.2020.116539">https://doi.org/10.1016/j.epsl.2020.116539</a> </p>
+						<p></p>
+						<p>Results differ from the hypothesis commonly used in volcanology that the bulk density (averaged density taking into account the liquid, solid and gas phases and their respective concentrations) contrasts control the motion of mass in magmatic reservoirs. The viscosity contrast between the two melt phases and injection velocity were found to have a lesser importance on the emplacement of new magma in the reservoir. All simulations showed the initial radial growth of the intruded batch above the inlet before the main dynamics set up. Higher injection rate lengthen the duration between the beginning of the injection and set up of the main dynamics, and in turn increase the volume of the initial batch.  </p>
+					    <p>Related publication: Carrara, A., Burgisser, A., Bergantz, G.W., 2020. The architecture of intrusions in magmatic mush, Earth and Planetary Science Letters, 549, 116539. <a href="https://doi.org/10.1016/j.epsl.2020.116539">https://doi.org/10.1016/j.epsl.2020.116539</a> </p>
+						<p>Next step: We are exploring the interaction between the intruded magma and host mush following the injection. The objective is to identify what are the dynamics that promote mingling and/or mixing between the two end member materials</p>
 					</div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -133,7 +135,7 @@
 						<video width="100%" height= auto controls preload>
 							<source src="video/simu_inj1.mp4" type="video/mp4">
 						</video>
-						<pbis>Animation 1: Fluidization.</pbis>
+						<p class="p-small"><b>Animation 1:</b> Fluidization regime. The color of the particles depends on the magnitude of the contacts forces helping to highlight the force chains. The red color corresponds to the injected melt.</p>
 						<p></p>
 					</div>
                 </div> <!-- end of col -->
@@ -145,8 +147,8 @@
 							<source src="video/simu_inj2.mp4" type="video/mp4">
 						</video>
 					</div>
-					<pbis>Animation 2: Latteral spreading regime.</pbis>
-					<p></p>
+					<p class="p-small"><b>Animation 2:</b> Lateral spreading regime.</p>
+						<p></p>
                 </div> <!-- end of col -->
 			</div>
 			<div class="row">
@@ -156,27 +158,10 @@
 							<source src="video/simu_inj3.mp4" type="video/mp4">
 						</video>
 					</div>
-					<pbis>Animation 3: Rising regime dynamics.</pbis>
+					<p class="p-small"><b>Animation 3:</b> Rising regime.</p>
 					<p></p>
                 </div> <!-- end of col -->
 			</div>
-			<div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-						<h1>Current work:</h1>
-                        <p>We are exploring the interaction and mixing that exist between the intruded magma and host mush. The objective is to identify what are the dynamics that promote mingling and/or mixing between the two end member materials</p>
-						</div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div>
-                <div class="col-lg-12">
-                    <div class="image-container">
-                        <!--img class="img-fluid" src="images/header.jpg" alt="alternative"-->
-                        <img class="img-fluid" src="images/astoria.jpg" alt="alternative">
-                        <figcaption>Columbia river estuary Jul 18, Astoria, OR, USA. Credit: My wife</figcaption>
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-1b -->
     <!-- end of intro -->
