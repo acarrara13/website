@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Non spherical DEM">
+    <meta name="author" content="Alex Carrara">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Alex Carrara's Website</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top top-nav-collapse">
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+        <div class="collapse navbar-collapse top-nav-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="./index.html#research">Back</a>
+                </li>
+            </ul>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+    <div class="section-title">Magma reservoir dynamics</div>
+    
+    <div id="magma_reservoirs" class="basic-1b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+						<h1>Current work:</h1>
+                        <p>All the simulations below are performed using <a href="https://www.migflow.be/">Migflow</a> (liquid phase) and <a href="https://git-xen.lmgc.univ-montp2.fr/lmgc90/lmgc90_user/-/wikis/home">LMGC90</a> (solid phase).</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+			<div class="row" style="margin-top:2.0rem">
+                <div class="col-lg-12">
+					<div class="video">
+						<video width="100%" height= auto controls preload>
+							<source src="video/non_spherical_dem1.mp4" type="video/mp4">
+						</video>
+						<p class="p-small"><b>Animation 1:</b> Shearing of a small sample of mush (1cm<sup>3</sup>). The viscosity of the liquid is 100 Pa s and its density is 2400 kg m-3. The crystals have the same size (2*0.5*0.5 mm) and density (2700 kg m<sup>-3</sup>). The motion of the liquid is imposed at the top (v<sub>x</sub> = 1 10<sup>-5</sup> m s<sup>-1</sup>) and bottom (v<sub>x</sub> =0 m s<sup>-1</sup>) of the domain. The crystals are entrained by the liquid.
+					</div>
+                </div> <!-- end of col -->
+			</div>
+			<div class="row" style="margin-top:2.0rem">
+                <div class="col-lg-12">
+					<div class="video">
+						<video width="100%" height= auto controls preload>
+							<source src="video/non_spherical_dem2.mp4" type="video/mp4">
+						</video>
+						<p class="p-small"><b>Animation 2:</b> Shearing of a small sample of mush (1cm<sup>3</sup>) with a confining pressure (10 Pa). The viscosity of the liquid is 10<sup>4</sup> Pa s and its density is 2400 kg m-3. The crystals have the same size (2*0.5*0.5 mm) and density (2700 kg m<sup>-3</sup>). the simulation is controlled by an upper plate (displayed in the animation). Between 0 s and 10s, the normal pressure imposed by the upper plate is linearly increased to 10 Pa s. Between 10 s and 20 s, the lateral velocity (v<sub>x</sub>) is increased linearly to 10<sup>-4</sup> m s<sup>-1</sup> while the normal pressure is kept constant. Then both the normal pressure and lateral velocity are kept constant. The continuous fields represent mean-field of the particles computed using coarse-graining (<a href="https://aip.scitation.org/doi/10.1063/1.4812809">Weinhart et al., 2013</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0032591015301959?via%3Dihub">Weinhart et al., 2016</a>; <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020JB020203">Breard et al., 2020</a>). On the left: The local shear rate (dv<sub>x</sub>/dx). On the right: The order parameter S (<a href="https://aip.scitation.org/doi/full/10.1063/1.4812386">Guo et al., 2013</a>). Equal to 1 when the particles are oriented in the same direction and 0 when randomly organized. 
+					</div>
+                </div> <!-- end of col -->
+			</div>
+			<div class="row" style="margin-top:2.0rem">
+                <div class="col-lg-12">
+					<div class="video">
+						<video width="100%" height= auto controls preload>
+							<source src="video/non_spherical_dem3.mp4" type="video/mp4">
+						</video>
+						<p class="p-small"><b>Animation 3:</b> Same simulation as Animation2. The color of the continuous field depends on the normalized shear stress Q/P (<a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.87.062203">Azema et al., 2013</a>
+					</div>
+                </div> <!-- end of col -->
+			</div>
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1b -->
+    <!-- end of intro -->
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts2.js"></script> <!-- Custom scripts -->
